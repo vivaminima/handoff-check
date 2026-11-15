@@ -1,6 +1,8 @@
 # handoff-check
 
 *Part of the [Vivaminima tools](https://github.com/vivaminima) for Claude Code users.*
+
+<img src="https://raw.githubusercontent.com/vivaminima/vivaminima/main/img/run/handoff-check.png" width="760" alt="handoff-check: real output of the free version on a made-up sample">
 Unlike a plain Stop-hook reminder, this checks the claimed artifact and writes an explicit verification receipt.
 
 Agents say "done, I sent it" when all they did was write a local file. This tool reads the agent's report, pulls out the file paths and delivery claims, checks them against the disk, and sorts every claim into a group you can read in five seconds.
