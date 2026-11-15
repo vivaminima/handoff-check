@@ -1,4 +1,6 @@
 # handoff-check
+
+*Part of the [Vivaminima tools](https://github.com/vivaminima) for Claude Code users.*
 Unlike a plain Stop-hook reminder, this checks the claimed artifact and writes an explicit verification receipt.
 
 Agents say "done, I sent it" when all they did was write a local file. This tool reads the agent's report, pulls out the file paths and delivery claims, checks them against the disk, and sorts every claim into a group you can read in five seconds.
@@ -115,7 +117,10 @@ MIT. See [LICENSE](LICENSE). Copyright (c) 2026 Vivaminima.
 ## More from Vivaminima
 
 - **Handoff Check Pro ($19)**, the paid edition of this tool, one-time payment on Gumroad: https://vivastory4.gumroad.com/l/handoff-check-pro
-- **Token Audit Kit ($19)** — see how many tokens your CLAUDE.md and its @imports cost before your first prompt, and a step-by-step guide to split it. Free script: https://github.com/vivaminima/context-file-audit · Paid kit: https://vivaminima.lemonsqueezy.com/checkout/buy/57973270-94ea-4cc7-bcb4-294693714087
+
+  <a href="https://vivastory4.gumroad.com/l/handoff-check-pro"><img src="https://raw.githubusercontent.com/vivaminima/vivaminima/main/img/handoff-check.png" width="480" alt="Handoff Check Pro"></a>
+
+- **Token Audit Kit ($19)** — see how many tokens your CLAUDE.md and its @imports cost before your first prompt, and a step-by-step guide to split it. Free script: https://github.com/vivaminima/context-file-audit · Paid kit (store): https://vivastory4.gumroad.com
 - Free tools: [skill-audit-kit](https://github.com/vivaminima/skill-audit-kit) · [secret-map](https://github.com/vivaminima/secret-map) · [inbox-ledger](https://github.com/vivaminima/inbox-ledger) · [release-gate](https://github.com/vivaminima/release-gate) · [skill-install-gate](https://github.com/vivaminima/skill-install-gate) · [console-safe](https://github.com/vivaminima/console-safe) · [checklist-stop](https://github.com/vivaminima/checklist-stop) · [handoff-check](https://github.com/vivaminima/handoff-check) · [llm-budget-router-lite](https://github.com/vivaminima/llm-budget-router-lite) · [go-no-go-verdict-skill](https://github.com/vivaminima/go-no-go-verdict-skill) · [ai-company-starter-kit](https://github.com/vivaminima/ai-company-starter-kit) · [beginner-readme-section](https://github.com/vivaminima/beginner-readme-section)
 
 Vivaminima is not affiliated with, endorsed by or sponsored by Anthropic.
