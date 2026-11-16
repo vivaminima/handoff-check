@@ -170,10 +170,20 @@ class PathExtraction(Case):
             ("없는 폴더/빠진 파일.txt", "missing")])
 
     def test_korean_output_on_cli(self):
+        # The console is named here. Whether Korean can be printed depends on it,
+        # and this test must not depend on the machine it runs on.
         self.write("결과 폴더/최종 보고서.md")
-        code, out, err = self.run_script("`결과 폴더/최종 보고서.md` 를 만들었다.\n")
+        report = "`결과 폴더/최종 보고서.md` 를 만들었다.\n"
+        code, out, err = self.run_script(report, env={"PYTHONIOENCODING": "utf-8"})
         self.assertEqual(code, 0)
         self.assertIn("결과 폴더/최종 보고서.md", out)
+        # cp1252 is what an English Windows gives a piped program (GitHub's Windows
+        # runners, for one). The file is still found; its name is printed escaped.
+        code, out, err = self.run_script(report, env={"PYTHONIOENCODING": "cp1252"})
+        self.assertEqual(code, 0)
+        self.assertNotIn("Traceback", err)
+        escaped = "결과 폴더/최종 보고서.md".encode("cp1252", "backslashreplace").decode("cp1252")
+        self.assertEqual(self.section(out, "LANDED"), ["L1    %s  [8 bytes]" % escaped])
 
     def test_korean_particle_after_file_name(self):
         self.write("report.md")
