@@ -1,0 +1,17 @@
+{
+  "name": "handoff-check",
+  "description": "Checks an agent's \"done, I sent it\" report against the disk and writes a verification receipt.",
+  "author": {
+    "name": "Vivaminima",
+    "url": "https://github.com/vivaminima"
+  },
+  "homepage": "https://vivastory4.gumroad.com/l/handoff-check-pro",
+  "repository": "https://github.com/vivaminima/handoff-check",
+  "license": "MIT",
+  "keywords": [
+    "ai-agents",
+    "claude-code",
+    "cli",
+    "multi-agent"
+  ]
+}
